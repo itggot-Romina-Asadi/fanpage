@@ -8,14 +8,13 @@ body {
     flex-direction: row;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .meny{
     height: 50px;
     width: 50px;
     background-color: antiquewhite;
-    
 }
 
 .container, .container2 {
@@ -29,16 +28,14 @@ body {
     background: url(https://s-media-cache-ak0.pinimg.com/originals/b1/46/11/b1461148640c57ec3ed77cef4a584e08.jpg) no-repeat center center fixed;
 }
 
-
-
 .header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg) no-repeat center center fixed;
+    background-color: #0f1724;
     background-position: 0vw 0vh;
-    height: 450px;
+    height: 500px;
     text-align: center;
 }
 
@@ -59,28 +56,40 @@ body {
 }
 
 .row1, .row2, .row3 {
-    background-color: black;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: row;
 }
 
-.puzzel1, .puzzel3, .puzzel9 {
-    flex-grow: 1;
+.puzzel1, .puzzel3 {
+    flex-grow: 3;
     background-color: beige;
 }
 
-.puzzel2, .puzzel4 {
-    flex-grow: 2;
-    background-color: red;
+.puzzel3 {
+    background: url("http://geekfr.com/cacheimg/i.php?img=http://www.numerama.com/content/uploads/2017/04/13rw_102_00814r-1024x683.jpg&key=b1f4d862d53d8951d05e752675c37b37");
+    background-position: -2vw 0vh;
+    flex-grow: 2.2;
 }
 
-.puzzel5, .puzzel8 {
-    flex-grow: 1.7;
+.puzzel2 {
+    width: 40%;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    background-color: #0f1724;
+}
+
+.puzzel4 {
+    background-color: red;
+    width: 30%;
+}
+
+.puzzel5 {
+    flex-grow: 0.8;
     background-color: aquamarine;
 }
 
-.puzzel6, .puzzel7 {
+.puzzel6 {
     flex-grow: 0.8;
     background-color: red;
 }
@@ -119,6 +128,8 @@ body {
     height: 100%;
     width: 300px;
     background-color: aqua;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .info {
