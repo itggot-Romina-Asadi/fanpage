@@ -12,6 +12,32 @@ body {
     width: 100vw;
 }
 
+.header_gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.topmeny {
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+    display: flex;
+    flex-direction: row;
+}
+
+.topmeny a {
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: #0f1724;
+}
+
+.social {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
 .meny{
     opacity: 0.72;
     flex-grow: 2;
@@ -28,7 +54,7 @@ body {
     display: none;
 }
 
-.container, .container2 {
+.container, .container2, .container3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +63,10 @@ body {
 .container2 {
     align-items: center;
     background: url(https://s-media-cache-ak0.pinimg.com/originals/b1/46/11/b1461148640c57ec3ed77cef4a584e08.jpg) no-repeat center center fixed;
+}
+
+.container3 {
+    background-color: #e4e0d4;
 }
 
 .header, .header_mer {
@@ -143,7 +173,7 @@ h1 {
     width: 90%;
     display: flex;
     flex-direction: column;
-    background-color: darkkhaki;
+    background-color: #d0d0d0;
     align-items: center;
     bottom: 0;
     height: 100%;
@@ -235,3 +265,28 @@ h1 {
 #container:hover {
     opacity: 0.3;
 }
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook_icon {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -5px;
+}
+
+.sprite-instagram_icon {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -5px;
+}
+
+.sprite-twitter_icon {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -55px;
+}
+
