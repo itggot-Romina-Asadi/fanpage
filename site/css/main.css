@@ -63,7 +63,7 @@ body {
 
 .container2 {
     align-items: center;
-    background: url(https://s-media-cache-ak0.pinimg.com/originals/b1/46/11/b1461148640c57ec3ed77cef4a584e08.jpg) no-repeat center center fixed;
+    background-color: #d0d0d0;
 }
 
 .container3 {
@@ -123,8 +123,6 @@ h1 {
     display: flex;
     flex-direction: row;
 }
-
-
 
 .puzzel9 img, .puzzel5 img {
     margin-bottom: -5px;
