@@ -1,8 +1,8 @@
 body {
-    background-color: #0f1724 ;
     margin: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
 }
 
 .topnav {
@@ -21,16 +21,15 @@ body {
 .topmeny {
     justify-content: center;
     align-items: center;
-    margin-left: 38%;
     display: flex;
     flex-direction: row;
+    margin-left: 33%;
 }
 
 .topmeny a {
     font-size: 20px;
     text-decoration: none;
     margin-right: 25px;
-    margin-left: 0px;
     color: #e4e4e4;
 }
 
@@ -66,7 +65,7 @@ body {
     background-color: #d0d0d0;
 }
 
-.container3 {
+.container3, .container {
     background-color: #0f1724;
 }
 
@@ -144,7 +143,7 @@ h1 {
     background-color: #0f1724;
 }
 
-.puzzel2 p, .puzzel4 p, .puzzel8 p, .puzzel7 p  {
+.puzzel2 p, .puzzel4 p, .puzzel8 p, .puzzel7 p, .puzzel2_ipad p  {
     color: #9fa0a5;
 }
 
@@ -219,11 +218,7 @@ h1 {
 .content {
     display: flex;
     flex-direction: row;
-    height: 100%;
     padding-bottom: 20px;
-    background-color: #e4e4e4;
-    width: 71.39%;
-    margin-top: -4px;
 }
 
 .sidenav {
@@ -313,7 +308,7 @@ h1 {
     background-position: -5px -65px;
 }
 
-.post h1, .post1 h1, .sidenav h1 {
+.post h1, .post1 h1, .sidenav h1, .sidenav_iphone h1 {
     color: #fff;
 }
 
@@ -322,13 +317,225 @@ h1 {
     color: #fff;
 }
 
-.sidenav a {
+.sidenav a, .sidenav_iphone a {
     text-decoration: none;
     color: #fff;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .sidenav_iphone a:hover {
     text-shadow: 2px 2px 22px rgba(80, 76, 74, 1);
+}
+
+.header_iphone5, .puzzel2_iphone, .puzzel5_iphone, .topmeny_iphone a,
+.social_iphone, .rad1_iphone, .rad2_iphone, .header_mer_iphone,
+.puzzel6_iphone, .puzzel9_iphone, .greyheader_iphone, .sidenav_iphone,
+
+.puzzel5_ipad, .header_ipad, .puzzel1_ipad, .puzzel2_ipad {
+    display: none;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+    .header, .puzzel1, .puzzel3, .puzzel2, .puzzel4, .puzzel5,
+    .topmeny, .social, .rad1, .rad2, .header_mer, #container, .puzzel6,
+    .puzzel9, .greyheader, .sidenav, .post1_nere img, .post_nere img,
+    .inlägg_nere img, .meny_ner img,
+
+    .puzzel5_ipad, .header_ipad {
+        display: none;
+    }
+
+    .header_iphone5, .puzzel2_iphone, .puzzel5_iphone,
+    .topmeny_iphone a, .social_iphone, .rad1_iphone, .rad2_iphone,
+    .header_mer_iphone, .puzzel6_iphone, .puzzel9_iphone, .greyheader_iphone,
+    .sidenav_iphone {
+        display:inline;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+
+    .links a, .blue_links a{
+        font-size: 15px;
+    }
+
+    .links, .blue_links {
+        height: 40px;
+        margin-top: -10px;
+    }
+
+    .puzzel2_iphone {
+        color: #9fa0a5;
+        text-align: center;
+    }
+
+    .topmeny_iphone, .social_iphone {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topmeny_iphone a {
+        font-size: 13px;
+        text-decoration: none;
+        margin: 5px;
+        color: #e4e4e4;
+    }
+
+    .social_iphone {
+        opacity: 0.8;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .header_gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rad1, .rad2, .row1, .row2 {
+        flex-direction: column;
+    }
+
+    .row1, .row2 {
+        height: 225px;
+    }
+
+    .header_mer_iphone {
+        background-color: #e56d68;
+    }
+
+    .puzzel8, .puzzel7 {
+        width: 95%;
+    }
+
+    .puzzel7 h1, .puzzel8 h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .puzzel7 p, .puzzel8 p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .puzzel7 {
+        background-color: #0f1724;
+    }
+
+    .puzzel9_iphone {
+        margin-top: 40px;
+    }
+
+    .posts {
+        margin-top: 5%;
+        width: 80%;
+        margin-left: -25px;
+    }
+
+    .sidenav_iphone {
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        background-color: #88ab9e;
+        padding-left: 15px;
+        padding-right: 20px;
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .rubrik {
+        text-align: center;
+        margin-top: -12px;
+        margin-bottom: -10px;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidenav_iphone a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        margin-top: -5px;
+    }
+
+    .puzzel5_iphone, .puzzel6_iphone, .puzzel9_iphone {
+        text-align: center;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .puzzel3, .puzzel5, .header, .puzzel1, .puzzel2 {
+        display: none;
+    }
+
+    .puzzel5_ipad, .header_ipad, .puzzel1_ipad, .puzzel2_ipad {
+        display: inline;
+    }
+
+    .links {
+        height: 40px;
+        margin-top: -5px;
+    }
+
+    .links a {
+        font-size: 20px;
+    }
+
+    .puzzel1_ipad {
+        margin-right: 10px;
+        margin-left: -45px;
+    }
+
+    .puzzel2_ipad h1 {
+        font-size: 22px;
+    }
+
+    .puzzel2_ipad p {
+        font-size: 15px;
+    }
+
+    .row1, .row2 {
+        height: 200px;
+    }
+
+    .puzzel4 {
+        width: 40%;
+    }
+
+    .puzzel4 p {
+        font-size: 12px;
+        margin-top: -15px;
+    }
+
+    .puzzel4 h1 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
 }
