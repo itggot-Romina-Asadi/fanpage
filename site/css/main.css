@@ -69,19 +69,20 @@ body {
     background-color: #0f1724;
 }
 
-.header, .header_mer {
+.header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-color: #0f1724;
-    background-position: 0vw 0vh;
     height: 500px;
     text-align: center;
 }
 
 .header_mer {
     background-color: #e56d68;
+    height: 500px;
+    text-align: center;
 }
 
 .links, .blue_links {
@@ -125,15 +126,6 @@ h1 {
 
 .puzzel9 img, .puzzel5 img {
     margin-bottom: -5px;
-}
-
-.puzzel1 {
-    background-position: 0vw -3vh;
-}
-
-.puzzel3 {
-    background-position: -2vw 0vh;
-    flex-grow: 2.2;
 }
 
 .puzzel2, .puzzel7, .puzzel8 {
@@ -286,7 +278,6 @@ h1 {
 
 .sprite {
     background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
     display: block;
 }
 
@@ -331,8 +322,8 @@ h1 {
 .header_iphone5, .puzzel2_iphone, .puzzel5_iphone, .topmeny_iphone a,
 .social_iphone, .rad1_iphone, .rad2_iphone, .header_mer_iphone,
 .puzzel6_iphone, .puzzel9_iphone, .greyheader_iphone, .sidenav_iphone,
-
-.puzzel5_ipad, .header_ipad, .puzzel1_ipad, .puzzel2_ipad {
+.puzzel5_ipad, .header_ipad, .puzzel1_ipad, .puzzel2_ipad,
+.topmeny_ipad, .header_mer_ipad, .puzzel6_ipad, .greyheader_ipad {
     display: none;
 }
 
@@ -345,16 +336,14 @@ and (orientation: portrait) {
     .header, .puzzel1, .puzzel3, .puzzel2, .puzzel4, .puzzel5,
     .topmeny, .social, .rad1, .rad2, .header_mer, #container, .puzzel6,
     .puzzel9, .greyheader, .sidenav, .post1_nere img, .post_nere img,
-    .inlägg_nere img, .meny_ner img,
-
-    .puzzel5_ipad, .header_ipad {
+    .inlägg_nere img, .meny_ner img {
         display: none;
     }
 
     .header_iphone5, .puzzel2_iphone, .puzzel5_iphone,
     .topmeny_iphone a, .social_iphone, .rad1_iphone, .rad2_iphone,
-    .header_mer_iphone, .puzzel6_iphone, .puzzel9_iphone, .greyheader_iphone,
-    .sidenav_iphone {
+    .header_mer_iphone, .puzzel6_iphone, .puzzel9_iphone,
+    .greyheader_iphone, .sidenav_iphone {
         display:inline;
     }
 
@@ -392,7 +381,6 @@ and (orientation: portrait) {
 
     .social_iphone {
         opacity: 0.8;
-        margin: 10px;
         margin-left: 40px;
         margin-right: 40px;
     }
@@ -415,7 +403,7 @@ and (orientation: portrait) {
     }
 
     .puzzel8, .puzzel7 {
-        width: 95%;
+        width: 100%;
     }
 
     .puzzel7 h1, .puzzel8 h1 {
@@ -490,16 +478,19 @@ and (max-device-width: 1024px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1) {
 
-    .puzzel3, .puzzel5, .header, .puzzel1, .puzzel2 {
+    .puzzel3, .puzzel5, .header, .puzzel1, .puzzel2, .row2, .topmeny,
+    .social, .header_mer, .puzzel6, .greyheader, .post1_nere img,
+    .post_nere img, .inlägg_nere img, .meny_ner img {
         display: none;
     }
 
-    .puzzel5_ipad, .header_ipad, .puzzel1_ipad, .puzzel2_ipad {
+    .header_ipad, .puzzel1_ipad, .puzzel2_ipad, .topmeny_ipad,
+    .social_iphone, .header_mer_ipad, .puzzel6_ipad, .greyheader_ipad {
         display: inline;
     }
 
-    .links {
-        height: 40px;
+    .links, .blue_links {
+        height: 68px;
         margin-top: -5px;
     }
 
@@ -520,10 +511,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
         font-size: 15px;
     }
 
-    .row1, .row2 {
-        height: 200px;
-    }
-
     .puzzel4 {
         width: 40%;
     }
@@ -538,4 +525,59 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-top: 5px;
     }
 
+    .wrapper {
+        height: 351px;
+    }
+
+    .social_iphone {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        opacity: 0.8;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 50px;
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    .social_iphone a {
+        margin-right: 50px;
+    }
+
+    .topmeny_ipad {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        margin-left: -340px;
+    }
+
+    .topmeny_ipad a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #e4e4e4;
+        margin-left: 30px;
+    }
+
+    .row1 {
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_mer_ipad {
+        background-color: #c24744;
+    }
+
+    .sidenav {
+        height: 220px;
+        width: 270px;
+        margin-left: -15px;
+    }
+
+    .posts {
+        width: 650px;
+    }
 }
